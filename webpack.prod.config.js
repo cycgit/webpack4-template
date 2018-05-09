@@ -11,11 +11,13 @@ module.exports = {
   },
   plugins: [],
   output: {
+    libraryTarget: 'umd',
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'build')
   },
   externals: {
     // react: 'React',
     // 'react-dom': 'ReactDom',
-  }
+  },
+  mode: 'production',
 };
